@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--bg:#090909;--card:#151515;--text:#f5f5f5;--muted:#aaa;--accent:#e31b23;--line:#292929}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{width:min(1120px,92%);margin:auto}
+.header{position:fixed;top:0;width:100%;z-index:20;background:rgba(9,9,9,.86);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;font-size:23px;letter-spacing:-1px;color:#fff;text-decoration:none}.logo span{color:var(--accent);margin-left:3px}
+nav{display:flex;gap:30px}nav a{color:#ddd;text-decoration:none;font-size:14px;font-weight:600}nav a:hover{color:#fff}
+.menu{display:none;background:none;border:0;color:white;font-size:26px}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;background:linear-gradient(90deg,#080808 0%,rgba(8,8,8,.88) 45%,rgba(8,8,8,.35)),url("images/gym-bg.svg") center/cover no-repeat}
+.hero-content{padding-top:70px}.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:2.5px;margin-bottom:14px}
+h1,h2{font-family:Anton,Impact,sans-serif;text-transform:uppercase;line-height:.98;letter-spacing:.5px}h1{font-size:clamp(58px,9vw,112px);max-width:850px}h1 span{color:var(--accent)}h2{font-size:clamp(44px,6vw,72px);margin-bottom:22px}
+.hero-text{color:#ccc;font-size:18px;margin:25px 0 30px;max-width:540px}.buttons{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 25px;border-radius:3px;text-decoration:none;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:1px;border:1px solid var(--accent)}.primary{background:var(--accent);color:#fff}.ghost{color:#fff;border-color:#666;background:transparent}
+.section{padding:110px 0}.split{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}.section p:not(.eyebrow){color:var(--muted);max-width:650px;margin-bottom:18px}
+.feature-card{padding:55px;background:linear-gradient(145deg,#1b1b1b,#0d0d0d);border:1px solid var(--line);min-height:280px;display:flex;flex-direction:column;justify-content:center}.card-icon{font-size:40px;color:var(--accent);margin-bottom:15px}.feature-card h3,.equip h3,.plan h3{font-size:24px;margin-bottom:10px}
+.text-link{color:#fff;font-weight:800;text-decoration:none;display:inline-block;margin-top:10px}
+.dark{background:#0e0e0e}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:45px}.section-head>p{max-width:390px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.equip{padding:38px;border:1px solid var(--line);background:#111}.number{color:var(--accent);font-weight:800;font-size:13px;margin-bottom:45px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.plan{position:relative;padding:38px;background:#111;border:1px solid var(--line)}.plan.featured{border-color:var(--accent)}.tag{position:absolute;right:18px;top:18px;color:var(--accent);font-size:10px;font-weight:900;letter-spacing:1px}.price{font-size:30px!important;font-weight:800;color:#fff!important;margin:20px 0 5px!important}.plan p{color:var(--muted);margin-bottom:25px}.plan .btn{padding:11px 18px}
+.cta{text-align:center;padding:110px 0;background:linear-gradient(135deg,#17090a,#090909)}.cta>div>p:not(.eyebrow){color:#aaa}.contact-info{display:flex;justify-content:center;gap:60px;margin:35px 0;color:#ccc}.contact-info strong{color:#fff}
+footer{border-top:1px solid var(--line);padding:30px 0}.footer{display:flex;justify-content:space-between;align-items:center}.footer p{color:#777;font-size:12px}
+@media(max-width:750px){nav{display:none;position:absolute;top:76px;left:0;width:100%;background:#0d0d0d;padding:20px;flex-direction:column;gap:18px}.nav.open nav{display:flex}.menu{display:block}.split,.grid-3,.plans{grid-template-columns:1fr}.section{padding:80px 0}.section-head{display:block}.contact-info{flex-direction:column;gap:20px}.footer{display:block;text-align:center}.footer .logo{margin-bottom:10px}}
